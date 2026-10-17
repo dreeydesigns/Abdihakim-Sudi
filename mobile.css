@@ -126,3 +126,30 @@
 @media (hover: none) and (pointer: coarse) {
   .contact-card:hover, .button:hover { transform: none; }
 }
+
+/* Approved, unmodified Dextron logo artwork. Keep its aspect ratio on every screen. */
+.official-logo { display:block; width:100%; height:auto; object-fit:contain; }
+.identity .header-logo { width:196px; max-width:100%; height:auto; }
+.dextron-card-logo { display:flex; align-items:center; width:min(260px,90%); min-height:103px; margin:27px 0 11px; }
+.dextron-card-logo .official-logo { width:100%; height:auto; }
+.footer .footer-logo { display:block; width:211px; height:auto; }
+@media (max-width: 1050px) and (min-width: 761px) {
+  .identity .header-logo { width:174px; }
+  .nav-row { gap:17px; }
+  .main-nav { gap:17px; }
+}
+@media (max-width:760px) {
+  .site-header { height:75px; }
+  .identity { flex-shrink:1; }
+  .identity .header-logo { width:164px; min-width:0; }
+  .nav-contact { flex-shrink:0; }
+  .dextron-card-logo { width:min(245px,90%); min-height:80px; margin:17px 0 12px; }
+  .footer .footer-logo { width:188px; }
+}
+@media (max-width:359px) {
+  .identity .header-logo { width:143px; }
+  .nav-row { gap:5px; }
+  .nav-contact { padding:9px 9px; }
+  .dextron-card-logo { width:210px; }
+  .footer .footer-logo { width:174px; }
+}

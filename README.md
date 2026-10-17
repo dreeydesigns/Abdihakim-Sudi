@@ -4,7 +4,8 @@ A mobile-first, premium digital business card and professional profile for **Abd
 
 ## Included
 
-- Responsive single-page profile: `index.html`, `styles.css`, `script.js`
+- Responsive single-page profile: `index.html`, `styles.css`, `mobile.css`, `script.js`
+- Official corporate logo files in `assets/dextron-logo-color.png`, `assets/dextron-logo-white.png`, and `assets/dextron-logo-black.png`
 - Optimized portrait in `assets/sudi-portrait.webp` (original supplied picture retained at `assets/original-sudi-photo.jpg`)
 - Downloadable vCard: `abdihakim-sudi.vcf`
 - Scannable-site-friendly layout with quick mobile Call, Email, and Save actions
@@ -18,7 +19,7 @@ A mobile-first, premium digital business card and professional profile for **Abd
 - White and soft navy-tinted backgrounds
 - Poppins for headings/buttons; Nunito for body text
 
-**Brand note:** The site uses a typographic, Dextron-inspired identity; it does not reproduce the exact official Dextron logo artwork. Replace the header/footer text treatment with the approved vector logo if supplied. Dextron is described as a business partner of Dauus according to the Dextron Enterprise brand book, **not** as Sudi's employer.
+**Brand note:** The site now includes approved Dextron logo artwork: the full-color logo on the light header, its black alternate on the orange partner card, and the white alternate on the navy footer. Logo files are included unchanged, displayed without stretching. Dextron is described as a business partner of Dauus according to the Dextron Enterprise brand book, **not** as Sudi's employer.
 
 ## Contact-data review before printing QR codes
 
