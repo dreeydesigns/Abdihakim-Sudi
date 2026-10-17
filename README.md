@@ -1,6 +1,6 @@
 # Abdihakim Sudi — Dextron-inspired Professional Profile
 
-A mobile-first, premium digital business card and professional profile for **Abdihakim Sudi**, listed as **Regional Manager at Dauus Company**, based in Somalia. The design follows Dextron Enterprise's documented corporate palette and typographic style without representing that Sudi is personally employed by Dextron.
+A mobile-first, premium digital business card and professional profile for **Abdihakim Sudi**, listed as **Regional Manager at Dauus Company**, based in Kenya. The design follows Dextron Enterprise's documented corporate palette and typographic style without representing that Sudi is personally employed by Dextron.
 
 ## Included
 
