@@ -46,3 +46,9 @@ Open `index.html` in a browser, or run `python3 -m http.server 8000` from the pr
 Professional identity, title, company and geography: linked public professional profile and supplied existing HTML. Dauus/Dextron company connection and brand styling: *Dextron Enterprise Comprehensive Brand Book & Style Guide* from the team's Drive. Company consumer brands are shown as organizational context, not Sudi's personal achievements.
 
 This website should be reviewed and approved by Sudi before public promotion.
+
+## Mobile experience (October 2026 refresh)
+
+The mobile-specific refinements live in `mobile.css`, loaded after `styles.css`. They include a photo-first QR-code landing view, touch-friendly CTAs, compact verified-profile details, improved readability and contact cards, a navy/orange quick-action dock with accessible icons, and iPhone safe-area support. Desktop styles are unchanged.
+
+Test at widths 320, 360, 390, 430, 768, and 1280px before publishing. The direct phone and email contact details remain editable in both `index.html` and `abdihakim-sudi.vcf`; verify them with Sudi before sharing the QR code publicly.

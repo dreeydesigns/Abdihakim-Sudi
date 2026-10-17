@@ -1,0 +1,128 @@
+/* Mobile-first refinements for Sudi's QR-code profile.
+   Loaded after styles.css to preserve the desktop design. */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 24px; }
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
+  .container { width: calc(100% - 36px); max-width: 540px; }
+  .top-rule { height: 3px; }
+  .site-header { height: 65px; }
+  .nav-row { gap: 12px; }
+  .identity { gap: 9px; min-width: 0; }
+  .identity-symbol { width: 36px; height: 36px; }
+  .identity-text strong { font-size: 14px; }
+  .identity-text small { font-size: 7px; letter-spacing: .14em; }
+  .nav-contact { padding: 10px 12px; min-height: 44px; font-size: 11px; gap: 5px; }
+  .nav-contact span { font-size: 17px; }
+
+  /* Show face and the essentials in the first mobile screen. */
+  .hero-grid { display: flex; flex-direction: column; align-items: stretch; gap: 0; min-height: 0; padding-top: 15px; padding-bottom: 24px; }
+  .hero-visual { order: -1; width: 100%; height: clamp(220px, 65vw, 304px); margin: 0 0 25px; }
+  .visual-backplate { left: 12px; right: 0; top: 8px; bottom: 12px; border-radius: 18px; clip-path: none; }
+  .visual-arc { display: none; }
+  .portrait-frame { top: 0; left: 0; right: 12px; bottom: 21px; border-radius: 15px; box-shadow: 0 12px 28px rgba(11,46,82,.12); }
+  .portrait-frame img { object-position: 50% 30%; }
+  .image-side-label { display: none; }
+  .portrait-caption { left: 13px; right: 25px; bottom: 0; min-height: 54px; padding: 10px 14px; gap: 11px; border-radius: 10px; box-shadow: 0 7px 22px rgba(4,30,52,.12); }
+  .portrait-caption .small-square { height: 29px; width: 3px; }
+  .portrait-caption strong { font-size: 13px; }
+  .portrait-caption small { font-size: 10px; line-height: 1.5; }
+  .card-asterisk { font-size: 22px; }
+  .eyebrow { margin-bottom: 9px; font-size: 9px; gap: 9px; letter-spacing: .09em; }
+  .eyebrow-line { width: 19px; }
+  .hero h1 { font-size: clamp(43px, 11.2vw, 57px); line-height: 1.03; letter-spacing: -.06em; margin-bottom: 12px; }
+  .role-line { gap: 11px; }
+  .role-rule { height: 39px; width: 3px; }
+  .role-line strong { font-size: 14px; line-height: 1.4; }
+  .role-line div span { font-size: 13px; }
+  .hero-description { margin: 11px 0 17px; font-size: 14px; line-height: 1.55; max-width: 46ch; }
+  .hero-actions { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 9px; }
+  .hero-actions .button { width: 100%; min-height: 51px; padding: 10px 12px; font-size: 12px; line-height: 1.3; white-space: normal; gap: 8px; justify-content: center; text-align: center; }
+  .hero-actions .button-icon, .hero-actions .button span[aria-hidden="true"] { flex-shrink: 0; }
+  .hero-caption, .hero-bottom { display: none; }
+
+  /* A scannable, 3-row summary instead of a tall stack of cards. */
+  .glance-grid { grid-template-columns: 1fr; }
+  .glance-item { min-height: 54px; padding: 12px 0; align-items: center; gap: 11px; }
+  .glance-item + .glance-item { border-left: 0; }
+  .glance-item:not(:last-child) { border-bottom: 1px solid var(--line); }
+  .glance-num { width: 23px; font-size: 10px; flex-shrink: 0; }
+  .glance-item div { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 13px; }
+  .glance-label { font-size: 9px; line-height: 1.4; letter-spacing: .09em; }
+  .glance-item strong { font-size: 13px; line-height: 1.4; text-align: right; }
+
+  .section-pad { padding: 58px 0 64px; }
+  .section-heading { margin-bottom: 25px; }
+  .section-kicker { font-size: 10px; }
+  .about-grid { gap: 24px; }
+  .about h2, .connect h2 { font-size: clamp(32px, 8.4vw, 43px); line-height: 1.2; }
+  .orange-swipe { margin-top: 17px; }
+  .about-content .lead { font-size: 18px; line-height: 1.6; }
+  .about-content > p:not(.lead) { font-size: 15px; line-height: 1.75; }
+  .arrow-link { min-height: 44px; font-size: 12px; }
+  .about-details { gap: 16px; margin-top: 25px; padding-top: 22px; }
+  .about-details strong { font-size: 13px; }
+  .network h2 { font-size: clamp(33px, 8.2vw, 47px); }
+  .network-intro { gap: 18px; margin-bottom: 27px; }
+  .network-intro > p { font-size: 14px; line-height: 1.75; }
+  .org-card { min-height: 0; padding: 25px 22px; }
+  .org-card h3 { font-size: clamp(35px, 9vw, 46px); margin: 21px 0 12px; }
+  .org-card p { margin-bottom: 20px; font-size: 14px; line-height: 1.75; }
+  .org-card > a { min-height: 44px; align-items: center; }
+  .dextron-lockup { font-size: clamp(33px, 8vw, 45px) !important; }
+  .portfolio { margin-top: 28px; padding-top: 26px; }
+  .portfolio ul { gap: 8px; }
+  .portfolio li { font-size: 11px; padding: 11px 12px; }
+  .affiliation-note { line-height: 1.6; }
+
+  .connect-lead { margin-bottom: 25px; }
+  .connect-lead p { font-size: 14px; line-height: 1.6; }
+  .connect-grid { gap: 10px; }
+  .contact-card { min-height: 96px; padding: 15px 56px 14px 18px; gap: 2px; border-radius: 11px; }
+  .contact-icon { top: 14px; right: 15px; width: 30px; height: 30px; font-size: 17px; }
+  .contact-type { font-size: 9px; letter-spacing: .12em; margin: 0; }
+  .contact-card strong { font-size: clamp(14px, 3.8vw, 18px); line-height: 1.4; margin: 0; overflow-wrap: anywhere; }
+  .contact-footer { border: 0; padding-top: 3px; font-size: 11px; }
+  .contact-footer b { display: none; }
+  .share-row { padding: 26px 0 0; margin-top: 25px; gap: 16px; }
+  .share-actions .button { min-height: 48px; white-space: normal; text-align: center; font-size: 12px; gap: 8px; }
+  .footer { padding: 35px 0 25px; }
+  .footer-top { gap: 15px; padding-bottom: 26px; }
+  .footer-brand { font-size: 23px; }
+  .footer-top p { max-width: 235px; font-size: 12px; line-height: 1.6; }
+  .footer-bottom { font-size: 11px; }
+
+  /* Accessible, real-sized one-tap phone actions. */
+  .mobile-toolbar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 0; padding: 7px 10px calc(7px + env(safe-area-inset-bottom, 0px)); background: var(--navy-deeper); border-top: 2px solid var(--orange); box-shadow: 0 -8px 25px rgba(9,36,62,.15); }
+  .mobile-toolbar a { color: #fff; min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 5px; font: 600 12px/1.15 var(--poppins); }
+  .mobile-toolbar a + a { border-left: 1px solid rgba(255,255,255,.16); }
+  .mobile-toolbar svg { width: 20px; height: 20px; color: var(--orange); fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-toolbar a span { font-size: 12px; line-height: 1.3; color: #fff; }
+  .mobile-toolbar a:active { background: rgba(255,255,255,.11); }
+  .toast { bottom: calc(83px + env(safe-area-inset-bottom, 0px)); }
+}
+
+@media (max-width: 359px) {
+  .container { width: calc(100% - 28px); }
+  .identity-text strong { font-size: 12px; }
+  .identity-text small { font-size: 6.5px; }
+  .nav-contact { font-size: 10px; padding: 9px 10px; }
+  .hero-grid { padding-top: 12px; }
+  .hero-visual { height: 216px; margin-bottom: 21px; }
+  .hero h1 { font-size: 42px; }
+  .hero-actions { grid-template-columns: 1fr; }
+  .hero-actions .button { min-height: 48px; }
+  .glance-item strong { font-size: 12px; }
+  .org-card-top { letter-spacing: .09em; }
+  .about-details { grid-template-columns: 1fr 1fr; }
+  .share-actions { flex-direction: column; }
+  .share-actions .button { width: 100%; }
+}
+
+@media (max-width: 760px) and (orientation: landscape) and (max-height: 500px) {
+  .hero-visual { height: 200px; max-width: 380px; margin-inline: auto; }
+  .mobile-toolbar a { min-height: 43px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .contact-card:hover, .button:hover { transform: none; }
+}
